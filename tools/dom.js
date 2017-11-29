@@ -26,4 +26,6 @@ const $ = function(selector) {
     return o
 }
 
+const jLong = $()
+
 var log = console.log.bind(console)

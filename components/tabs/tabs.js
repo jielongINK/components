@@ -6,7 +6,7 @@ var Tabs = function() {
     o.init = function() {
         $("[data-role='tab-panel'] li").uniqueClass(0, 'active')
         $("[data-role='tab-nav'] li").on('click', function (event) {
-            var index = $().index(event.target)
+            var index = jLong.index(event.target)
             $("[data-role='tab-panel'] li").uniqueClass(index, 'active')
         })
         
