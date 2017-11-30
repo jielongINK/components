@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>常用组件</title>
+    <link rel="stylesheet" href="./clear.css">
     <link rel="stylesheet" href="./components/tabs/tabs.css">
+    <link rel="stylesheet" href="./components/pager/pager.css">
 </head>
 <body>
     <div class="container">
@@ -32,8 +34,19 @@
                 </li>
             </ol>
         </div>
+        <h3>Pager组件</h3>
+        <div class="pager">
+            <nav>
+                <button class="first">首页</button>
+                <button class="prev">上一页</button>
+                <ol data-role="pager"></ol>
+                <button class="next">下一页</button>
+                <button class="last">末页</button>
+            </nav>
+        </div>
     </div>
     <script src="./tools/dom.js"></script>
     <script src="./components/tabs/tabs.js"></script>
+    <script src="./components/pager/pager.js"></script>
 </body>
 </html>
