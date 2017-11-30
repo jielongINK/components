@@ -4,13 +4,16 @@ var Tabs = function() {
         panel: "tab-panel",
     }
     o.init = function() {
-        $("[data-role='tab-panel'] li").uniqueClass(0, 'active')
-        $("[data-role='tab-nav'] li").uniqueClass(0, 'current')
+        var navLi = $("[data-role='tab-nav'] li")
+        var panelLi = $("[data-role='tab-panel'] li")
+        navLi.uniqueClass(0, 'current')
+        panelLi.uniqueClass(0, 'active')
+        
 
-        $("[data-role='tab-nav'] li").on('click', function (event) {
+        navLi.on('click', function (event) {
             var index = jLong.index(event.target)
-            $("[data-role='tab-panel'] li").uniqueClass(index, 'active')
-            $("[data-role='tab-nav'] li").uniqueClass(index, 'current')
+            panelLi.uniqueClass(index, 'active')
+            navLi.uniqueClass(index, 'current')
         })
         
         return this
