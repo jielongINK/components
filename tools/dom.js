@@ -2,6 +2,10 @@ const $ = function(selector) {
     var o = {}
     o.element = document.querySelectorAll(selector)
 
+    o.getEle = function() {
+        return o.element[0]
+    }
+
     o.index = function(ele) {
         var siblings = ele.parentNode.children
         return Array.prototype.indexOf.call(siblings,ele)
@@ -21,6 +25,10 @@ const $ = function(selector) {
         o.element.forEach((ele, index) => ele.addEventListener(eventType, func))
 
         return this
+    }
+
+    o.setAttr = function(attribute, value) {
+        o.element.forEach((ele, index) => ele[attribute] = value)
     }
 
     return o
