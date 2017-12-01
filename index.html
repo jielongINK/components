@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./clear.css">
     <link rel="stylesheet" href="./components/tabs/tabs.css">
     <link rel="stylesheet" href="./components/pager/pager.css">
+    <link rel="stylesheet" href="./components/carousel/carousel.css">
 </head>
 <body>
     <div class="container">
@@ -44,9 +45,27 @@
                 <button class="last">末页</button>
             </nav>
         </div>
+        <h3>Carousel组件</h3>
+        <div class="carousel">
+            <ul class="pic-list">
+                <li>
+                    <img src="./static/images/pic-1.jpeg" alt="pic">
+                </li>
+                <li>
+                    <img src="./static/images/pic-2.jpg" alt="pic">
+                </li>
+                <li>
+                    <img src="./static/images/pic-3.jpg" alt="pic">
+                </li>
+            </ul>
+            <ul class="min-button"></ul>
+            <button class="carousel-prev btn">&lt;</button>
+            <button class="carousel-next btn">&gt;</button>
+        </div>
     </div>
     <script src="./tools/dom.js"></script>
     <script src="./components/tabs/tabs.js"></script>
     <script src="./components/pager/pager.js"></script>
+    <script src="./components/carousel/carousel.js"></script>
 </body>
 </html>

@@ -31,6 +31,14 @@ const $ = function(selector) {
         o.element.forEach((ele, index) => ele[attribute] = value)
     }
 
+    o.setStyle = function(style, value) {
+        o.element.forEach((ele, index) => ele.style[style] = value)
+    }
+
+    o.getStyle = function (style) {
+        return window.getComputedStyle(o.element[0])[style]
+    }
+
     return o
 }
 

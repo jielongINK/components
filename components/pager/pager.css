@@ -15,6 +15,7 @@
     height: 30px;
     line-height: 30px;
     margin-right: 2px;
+    cursor: pointer;
 }
 .pager nav .last{
     margin-right: 0;
