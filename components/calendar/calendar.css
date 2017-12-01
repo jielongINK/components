@@ -1,0 +1,93 @@
+.calendar{
+    width: 600px;
+    height: 450px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+.calendar nav{
+    position: relative;
+    height: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.today{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 30px;
+    font-size: 20px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: #000;
+    color: #fff;
+}
+.calendar-prev, .calendar-next{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border: 0px solid #fff;
+    background: #fff;
+    margin-top: 5px;
+}
+.year-month{
+    width: 115px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    margin: 5px 10px;
+}
+.day{
+    width: 560px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.day li{
+    float: left;
+    width: 80px;
+    height: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.days{
+    width: 560px;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.days li{
+    float: left;
+    width: 79px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.currentDay{
+    background: #000 !important;
+    color: #fff;
+}
+.weekend{
+    background-color: #cbcbcb;
+    color: red;
+}
+.clear:after{
+    clear: both;
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.clear{
+    zoom: 1;
+}
