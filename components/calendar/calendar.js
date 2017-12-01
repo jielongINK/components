@@ -13,7 +13,6 @@ var Calendar = function() {
         today: $(".today"),
     }
     o.init = function() {
-        // o.createLi(o.year, o.currentMonth)
         o.backToday()
         o.bindEvent()
     }
