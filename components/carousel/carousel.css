@@ -1,0 +1,61 @@
+.carousel{
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.pic-list{
+    width: 10000px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pic-list li{
+    float: left;
+}
+.min-button{
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+}
+.min-button li{
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #413f34;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.min-button .current{
+    background-color: #e6c615;
+}
+.min-button li:last-child{
+    margin-right: 0;
+}
+.carousel-prev,.carousel-next{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) scaleY(2);
+    opacity: 0;
+    background-color: #000000;
+    border: 0 solid #000;
+    cursor: pointer;
+}
+.carousel:hover .btn{
+    opacity: 0.5;
+}
+.carousel-prev{
+    left: 20px;
+}
+.carousel-next{
+    right: 20px;
+}
